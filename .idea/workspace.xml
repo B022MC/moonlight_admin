@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/base-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/black-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/blue-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/global-scss-var.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +59,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/VueProject/moonlight_admin/src/assets/fonts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "fileTemplates",
     "ts.external.directory.path": "D:\\VueProject\\moonlight_admin\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -64,6 +75,15 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\VueProject\moonlight_admin\src\assets\fonts" />
+      <recent name="D:\VueProject\moonlight_admin\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VueProject\moonlight_admin" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -72,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694056457234</updated>
-      <workItem from="1694056458383" duration="2886000" />
+      <workItem from="1694056458383" duration="7531000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694067235937</created>
@@ -109,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694068183342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1694068842998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694068842998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +169,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
