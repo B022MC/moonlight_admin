@@ -130,6 +130,8 @@
 import {Lock, User} from '@element-plus/icons-vue'
 import mySwitch from '@/utils/mySwitch.ts'
 import {reactive, ref} from 'vue'
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
 import api from '@/api/login.ts'
 import {ElMessage} from 'element-plus'
 import {useRouter} from 'vue-router'
@@ -352,12 +354,11 @@ input {
 /* 标题盒子 */
 .title-box {
   height: 200px;
-  line-height: 300px;
+  line-height: 200px;
 }
 
 /* 标题 */
 .title-box h1 {
-
   text-align: center;
   color: white;
   /* 禁止选中 */
