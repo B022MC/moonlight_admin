@@ -5,17 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/base-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/black-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/blue-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/global-scss-var.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto-imports.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/login.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/waoku.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/wuwu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/mySwitch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Login/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/base-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/black-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/blue-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/global-scss-var.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -28,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -66,7 +81,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "ts.external.directory.path": "D:\\VueProject\\moonlight_admin\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Windows\\Desktop\\moonlight_admin\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -81,8 +96,21 @@
       <recent name="D:\VueProject\moonlight_admin\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Windows\Desktop\moonlight_admin\src\assets\img" />
       <recent name="D:\VueProject\moonlight_admin" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,6 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694056457234</updated>
       <workItem from="1694056458383" duration="7531000" />
+      <workItem from="1694587857994" duration="10432000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694067235937</created>
