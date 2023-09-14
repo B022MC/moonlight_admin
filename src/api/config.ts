@@ -21,15 +21,18 @@ const Service = axios.create({
 })
 
 //请求拦截器
-Service.interceptors.request.use((config) => {
-    //配置请求头
-    config.headers.common['Authorization'] = window.sessionStorage.getItem('token') === null ? null : window.sessionStorage.getItem('token')
-    return config;
-    },
-    (error) => {
-        return Promise.reject(error);
-    }
-)
+// Service.interceptors.request.use((config) => {
+//         // 检查config是否有效并具有headers属性
+//         if (config && config.headers) {
+//             // 配置请求头
+//             config.headers.common['Authorization'] = window.sessionStorage.getItem('token') === null ? null : window.sessionStorage.getItem('token');
+//         }
+//         return config;
+//     },
+//     (error) => {
+//         return Promise.reject(error);
+//     }
+// )
 
 //响应拦截器
 Service.interceptors.response.use((response) => {
