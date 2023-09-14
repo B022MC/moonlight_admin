@@ -23,7 +23,7 @@ const loginApi = (data: ApiData): Promise<AxiosResponse> => {
 
 const registerApi = (data: ApiData): Promise<AxiosResponse> => {
     return login.post({
-        url: '/user',
+        url: '/user/add',
         data
     });
 };

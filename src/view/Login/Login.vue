@@ -130,13 +130,10 @@
 import {Lock, User} from '@element-plus/icons-vue'
 import mySwitch from '@/utils/mySwitch.ts'
 import {reactive, ref} from 'vue'
-import { useVuelidate } from '@vuelidate/core'
-import { required, email } from '@vuelidate/validators'
 import api from '@/api/login.ts'
 import {ElMessage} from 'element-plus'
 import {useRouter} from 'vue-router'
-import {onMounted} from '@vue/runtime-core'
-import axios from "axios";
+
 //
 const loginForm = reactive({
   username: '',
@@ -170,82 +167,29 @@ const rules = reactive({
 
 const router = useRouter()
 
-// const login = async () => {
-//   try {
-//     const valid = await loginFormRef.value.validate()
-//     if (valid) {
-//       const res = await api.loginApi(loginForm)
-//       console.log('login', res)
-//       if (res.status === 0) {
-//         ElMessage.success(res.message)
-//         window.sessionStorage.setItem('token', res.token)
-//         await router.push('/home')
-//       }
-//     }
-//   } catch (error) {
-//     console.error(error)
-//   }
-// }
-// 登录函数
 const login = async () => {
   try {
-    const response = await axios.post('http://localhost:8080/user/login', {
-      username: loginForm.username,
-      password: loginForm.password
-    });
-
-    // 处理成功登录的响应
-    if (response.status === 200 && response.data.success) {
-      // 登录成功后的逻辑，例如保存 token
-      const token = response.data.token;
-      // 进行路由跳转或其他操作
-    } else {
-      // 登录失败时的处理
-      console.error('登录失败：', response.data.message);
-    }
+      const res = await api.loginApi(loginForm)
+      console.log('login', res)
+      if (res.status === 0) {
+        ElMessage.success(res.data.message)
+        window.sessionStorage.setItem('token', res.data.token)
+        await router.push('/home')
+      }
   } catch (error) {
-    // 处理请求错误
-    console.error('登录请求出错：', error);
+    console.error(error)
   }
-};
-
-const register = async () => {
-  try {
-    const response = await axios.post('http://localhost:8080/user', {
-      username: registerForm.username,
-      password: registerForm.password
-    });
-
-    // 处理成功注册的响应
-    if (response.status === 200 && response.data.success) {
-      // 注册成功后的逻辑，例如保存 token
-      const token = response.data.token;
-      // 进行路由跳转或其他操作
-    } else {
-      // 注册失败时的处理
-      console.error('注册失败：', response.data.message);
-    }
-  } catch (error) {
-    // 处理请求错误
-    console.error('注册请求出错：', error);
-  }
-};
-// const register = async () => {
-//   const valid = await registerFormRef.value.validate();
-//
-//   if (!valid) {
-//     return;
-//   }
-//   try {
-//     const res = await api.registerApi(registerForm);
-//
-//     if (res.status === 0) {
-//       ElMessage.success(res.message);
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+}
+const register = () => {
+      api.registerApi(registerForm).then(res => {
+        if (res.status === 0) {
+          ElMessage.success(res.message)
+        }
+      }).catch(error => {
+        console.log(error);
+      }
+  )
+}
 </script>
 
 <style scoped>
