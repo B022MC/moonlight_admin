@@ -171,8 +171,8 @@ const login = async () => {
   try {
       const res = await api.loginApi(loginForm)
       console.log('login', res)
-      if (res.status === 0) {
-        ElMessage.success(res.data.message)
+      if (res.status === 200) {
+        ElMessage.success(res.data.msg)
         window.sessionStorage.setItem('token', res.data.token)
         await router.push('/home')
       }
@@ -182,8 +182,8 @@ const login = async () => {
 }
 const register = () => {
       api.registerApi(registerForm).then(res => {
-        if (res.status === 0) {
-          ElMessage.success(res.message)
+        if (res.status === 200) {
+          ElMessage.success(res.data.msg)
         }
       }).catch(error => {
         console.log(error);
