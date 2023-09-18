@@ -10,17 +10,17 @@
   <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
     <a-menu-item key="1">
       <pie-chart-outlined/>
-      <span>Option 1</span>
+      <span>首页</span>
     </a-menu-item>
     <a-menu-item key="2">
       <desktop-outlined/>
-      <span>Option 2</span>
+      <span>用户权限</span>
     </a-menu-item>
     <a-sub-menu key="sub1">
       <template #title>
             <span>
               <user-outlined/>
-              <span>User</span>
+              <span>用户</span>
             </span>
       </template>
       <a-menu-item key="3">Tom</a-menu-item>

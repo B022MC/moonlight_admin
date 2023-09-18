@@ -153,7 +153,7 @@ const registerFormRef = ref('')
 const rules = reactive({
   username: [
     {required: true, message: '请输入用户名', trigger: 'blur'},
-    {min: 3, max: 5, message: '长度应该在3~5个字符之间', trigger: 'blur'},
+    {min: 3, max: 10, message: '长度应该在3~10个字符之间', trigger: 'blur'},
   ],
   password: [
     {required: true, message: '请输入密码', trigger: 'blur'},
@@ -170,10 +170,11 @@ const router = useRouter()
 const login = async () => {
   try {
       const res = await api.loginApi(loginForm)
-      console.log('login', res)
+      // console.log(res)
       if (res.status === 200) {
         ElMessage.success(res.data.msg)
-        window.sessionStorage.setItem('token', res.data.token)
+        window.sessionStorage.setItem('token', res.data.data.token)
+        // console.log(token)
         await router.push('/home')
       }
   } catch (error) {

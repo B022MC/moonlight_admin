@@ -8,6 +8,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import a_sider from '../../layout/sider/sider.vue'
+import a_header from '../../layout/header/header.vue'
 const collapsed = ref<boolean>(false);
 </script>
 <style scoped>
@@ -24,7 +25,15 @@ const collapsed = ref<boolean>(false);
           <a_sider/>
       </a-layout-sider>
       <a-layout>
-        <a-layout-header style="background: #fff; padding: 0" />
+        <a-layout-header style="background: #fff; padding: 0; height: 60px">
+          <div>
+            <a-space :size="20" wrap>
+              <a-avatar src="src/assets/img/b022.jpg" />
+            </a-space>
+          </div>
+
+        </a-layout-header>
+
         <a-layout-content style="margin: 0 16px">
           <a-breadcrumb style="margin: 16px 0">
             <a-breadcrumb-item>User</a-breadcrumb-item>
