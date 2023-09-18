@@ -55,4 +55,10 @@ import {ref} from "vue";
 
 const selectedKeys = ref<string[]>(['1']);
 </script>
-
+<style>
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+</style>

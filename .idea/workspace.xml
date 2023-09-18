@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="feat:  修改响应拦截器">
-      <change afterPath="$PROJECT_DIR$/src/layout/header/header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/sider/sider.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/menu.ts" afterDir="false" />
+    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="feat:  重构首页显示 使用ant design vue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/sider/sider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/sider/sider.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Home/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +115,7 @@
       <workItem from="1694833951522" duration="13088000" />
       <workItem from="1694856218006" duration="1312000" />
       <workItem from="1694951903122" duration="2024000" />
-      <workItem from="1695020652354" duration="10142000" />
+      <workItem from="1695020652354" duration="10379000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694067235937</created>
@@ -225,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694843815214</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat:  重构首页显示 使用ant design vue">
+      <created>1695031286724</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695031286724</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +261,8 @@
     <MESSAGE value="feat: 增加lidate" />
     <MESSAGE value="feat:  修复login" />
     <MESSAGE value="feat:  修改响应拦截器" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  修改响应拦截器" />
+    <MESSAGE value="feat:  重构首页显示 使用ant design vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  重构首页显示 使用ant design vue" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
