@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="feat:  修复login">
+    <list default="true" id="6efb843a-ea58-47b9-9bf4-2d050b578c1f" name="更改" comment="feat:  修改响应拦截器">
+      <change afterPath="$PROJECT_DIR$/src/layout/header/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/sider/sider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/menu.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +32,7 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" url="file://D:/Software/Go" />
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
@@ -32,6 +43,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,10 +61,16 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/VueProject/moonlight_admin/src/assets/fonts&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -102,7 +122,10 @@
       <workItem from="1694660059016" duration="6853000" />
       <workItem from="1694675447837" duration="5136000" />
       <workItem from="1694704156770" duration="267000" />
-      <workItem from="1694833951522" duration="3643000" />
+      <workItem from="1694833951522" duration="13088000" />
+      <workItem from="1694856218006" duration="1312000" />
+      <workItem from="1694951903122" duration="2024000" />
+      <workItem from="1695020652354" duration="10142000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694067235937</created>
@@ -195,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694704373877</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat:  修改响应拦截器">
+      <created>1694843815214</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694843815214</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +263,11 @@
     <MESSAGE value="feat: 登录" />
     <MESSAGE value="feat: 增加lidate" />
     <MESSAGE value="feat:  修复login" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  修复login" />
+    <MESSAGE value="feat:  修改响应拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  修改响应拦截器" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

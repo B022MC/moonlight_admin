@@ -50,7 +50,7 @@ axios.interceptors.response.use(
 );
 
 // 示例用法
-axios.get('/api/some-endpoint')
+/*axios.get('/api/some-endpoint')
     .then((response: AxiosResponse<ApiResponse>) => {
         // 这里的 response 包含了正确解析的响应数据
         console.log('响应数据:', response);
@@ -58,6 +58,6 @@ axios.get('/api/some-endpoint')
     .catch((error) => {
         // 在这里处理请求错误
         console.error('请求错误:', error);
-    });
+    });*/
 
 export default Service
