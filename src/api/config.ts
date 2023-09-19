@@ -28,7 +28,21 @@ const Service = axios.create({
 })
 
 // 请求拦截器
-
+Service.interceptors.request.use(
+    (config) => {
+        // 在发送请求之前可以进行一些操作，例如添加请求头部信息
+        const token = sessionStorage.getItem('token'); // 假设你的token存储在localStorage中
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+        }
+        return config;
+    },
+    (error) => {
+        // 处理请求错误
+        console.error('请求拦截器错误:', error);
+        return Promise.reject(error);
+    }
+);
 
 // 定义响应拦截器
 axios.interceptors.response.use(

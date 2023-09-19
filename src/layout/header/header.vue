@@ -5,17 +5,25 @@
 * @version 1.0
 */
 <script setup lang="ts">
-
+import { ref } from 'vue';
+import a_avatar from '../header/a_avatar.vue'
+import a_badge from '../header/badge.vue'
+const ghost = ref(false);
 </script>
 
 <template>
-<!--  <a-page-header-->
-<!--      style="border: 1px solid rgb(235, 237, 240)"-->
-<!--      title="Title"-->
-<!--      sub-title="This is a subtitle"-->
-<!--  >-->
-<!--    -->
-<!--  </a-page-header>-->
+  <a-page-header
+      :ghost="ghost"
+      @back="() => $router.go(-1)"
+  >
+
+    <template #extra>
+<!--      <a_badge/>-->
+      <a_avatar/>
+    </template>
+
+
+  </a-page-header>
 </template>
 
 <style scoped>

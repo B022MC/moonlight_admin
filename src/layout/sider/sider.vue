@@ -9,12 +9,16 @@
   <div class="logo"/>
   <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
     <a-menu-item key="1">
-      <pie-chart-outlined/>
-      <span>首页</span>
+      <router-link to="/welcome">
+        <pie-chart-outlined/>
+        <span>首页</span>
+      </router-link>
     </a-menu-item>
     <a-menu-item key="2">
-      <desktop-outlined/>
-      <span>用户权限</span>
+      <router-link to="/userlist">
+        <desktop-outlined/>
+        <span>用户列表</span>
+      </router-link>
     </a-menu-item>
     <a-sub-menu key="sub1">
       <template #title>
@@ -54,6 +58,7 @@ import {
 import {ref} from "vue";
 
 const selectedKeys = ref<string[]>(['1']);
+
 </script>
 <style>
 .logo {

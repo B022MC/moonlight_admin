@@ -5,20 +5,13 @@
 * @version 1.0
 */
 <script setup lang="ts">
-
+import { NotificationOutlined } from '@ant-design/icons-vue';
 </script>
 
 <template>
-  <a-badge count="25" />
-  <a-badge
-      count="4"
-      :number-style="{
-      backgroundColor: '#fff',
-      color: '#999',
-      boxShadow: '0 0 0 1px #d9d9d9 inset',
-    }"
-  />
-  <a-badge count="109" :number-style="{ backgroundColor: '#52c41a' }" />
+  <a-badge :count="1">
+    <a-avatar src="src/assets/img/notification_line.png" shape="square"  />
+  </a-badge>
 </template>
 
 <style scoped>
