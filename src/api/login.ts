@@ -28,6 +28,8 @@ const registerApi = (data: ApiData): Promise<AxiosResponse> => {
     });
 };
 
+
+
 export default {
     loginApi,
     registerApi

@@ -128,9 +128,9 @@
 
 <script setup>
 import {Lock, User} from '@element-plus/icons-vue'
-import mySwitch from '@/utils/mySwitch.ts'
+import mySwitch from '../../utils/mySwitch.ts'
 import {reactive, ref} from 'vue'
-import api from '@/api/login.ts'
+import api from '../../api/login.ts'
 import {ElMessage} from 'element-plus'
 import {useRouter} from 'vue-router'
 
