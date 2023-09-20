@@ -4,28 +4,10 @@
  * @Software: WebStorm moonlight_admin
  * @version 1.0
  */
-import {createStore} from 'vuex'
+import { defineStore } from 'pinia'
 
-export default createStore({
-        state: {
-            collapsed: true,         // 初始状态为不折叠
-            openKeys: [],             // 初始打开的菜单项
-            preOpenKeys: [],          // 预打开的菜单项
-            selectedKeys: ['1'],      // 初始选择
-        },
-        mutations: {
-            toggleCollapsed(state) {
-                state.collapsed = !state.collapsed;
-                state.openKeys = state.collapsed ? [] : state.preOpenKeys;
-                // 其他 mutations...
-            },
-            // actions: {
-            //     // actions...
-            // },
-            // modules: {
-            //     // modules...
-            // },
-        },
-    }
-)
-
+// useStore 可以是 useUser、useCart 之类的任何东西
+// 第一个参数是应用程序中 store 的唯一 id
+export const useStore = defineStore('main', {
+    // other options...
+})

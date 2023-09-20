@@ -1,5 +1,12 @@
 <template>
-  <a-table :columns="columns" :data-source="data">
+  <a-table
+      class="ant-table-striped"
+
+      :columns="columns"
+      :data-source="data"
+      :pagination="{ pageSize: 5 }"
+      :row-class-name="(_record, index) => (index % 2 === 1 ? 'table-striped' : null)"
+  >
     <template #bodyCell="{ column, text }">
       <template v-if="column.dataIndex === 'ID'">
         <a>{{ text }}</a>
@@ -29,7 +36,6 @@ const getUserList = async () => {
       ElMessage.success(res.data.msg)
       userinfo = res.data.data; // 将数据赋值给userinfo
       data.value = userinfo; // 更新data变量
-      console.log(userinfo)
     }
   } catch (error) {
     console.error('获取用户列表失败:', error);
@@ -74,3 +80,11 @@ const columns = [
   },
 ];
 </script>
+<style scoped>
+[data-doc-theme='light'] .ant-table-striped :deep(.table-striped) td {
+  background-color: #fafafa;
+}
+[data-doc-theme='dark'] .ant-table-striped :deep(.table-striped) td {
+  background-color: rgb(29, 29, 29);
+}
+</style>

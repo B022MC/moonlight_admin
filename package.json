@@ -15,6 +15,7 @@
     "axios": "^1.5.0",
     "buffer": "^6.0.3",
     "element-plus": "^2.3.12",
+    "esbuild": "*",
     "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
@@ -28,8 +29,8 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@esbuild-plugins/node-globals-polyfill": "0.2.3",
+    "@esbuild-plugins/node-modules-polyfill": "0.2.2",
     "@types/js-cookie": "^3.0.1",
     "@types/jsonwebtoken": "^9.0.3",
     "@types/lodash": "^4.14.198",
@@ -38,7 +39,8 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.15",
     "events": "^3.3.0",
-    "less": "^4.2.0",
+    "less": "^3.2.0",
+    "less-loader": "^5.0.0",
     "postcss": "^8.4.29",
     "postcss-modules": "^6.0.0",
     "postcss-pxtorem": "^6.0.0",

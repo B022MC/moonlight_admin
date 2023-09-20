@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
 import Vue from '@vitejs/plugin-vue'
 import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import {resolve} from 'path';
@@ -36,8 +36,15 @@ export default defineConfig({
       protocolImports: true,
     })
   ],
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true
+      }
+    }
+  },
   resolve: {
     alias,
-    extensions: ['.js','.ts','.jsx','.tsx','.json','.vue']
+    extensions: ['.js','.ts','.jsx','.tsx','.json','.vue','.less']
   },
 })
